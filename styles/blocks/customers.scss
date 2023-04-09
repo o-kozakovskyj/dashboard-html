@@ -1,10 +1,15 @@
 .customers {
-  padding: 30px 0 40px 0;
+  padding: 30px 40px 38px 41px;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+  background-color: #fff;
+  color: #292D32;
 
   &__header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 30px 53px 40px 38px;
+    margin-right: 13px;
   }
 
   &__title {
@@ -19,6 +24,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #16C098;
+    margin-top: 7px;
   }
 
   &__search {
@@ -34,18 +40,94 @@
     border: none;
 
     &::placeholder {
-      color: #B5B7C0;
+      color: $table-headers;
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
     }
   }
+
   &__search-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     color: #7E7E7E;
     z-index: 2;
     left: 11px;
   }
+
+  &__table-content {
+    margin: 40px 0 0 0;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+
+  &__table-head {
+    color: $table-headers;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 0 -38px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 1px;
+      content: "";
+      border-bottom: 1px solid #EEEEEE;
+      top: 34px;
+      left: -40px;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 1px;
+      content: "";
+      border-bottom: 1px solid #EEEEEE;
+      top: 34px;
+      right: -40px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 32px;
+  }
+
+  &__table-header-status {
+    text-align: center;
+  }
+
+  &__table-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4px 0;
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
+    color: #DF0404;
+    border-radius: 4px;
+    width: 80px;
+
+    &--active {
+      background: rgba(22, 192, 152, 0.38);
+      border: 1px solid #00B087;
+      color: #008767;
+
+    }
+  }
+}
+
+th {
+  text-align: left;
+  padding: 0 0 14px 0;
+}
+
+td {
+  padding: 24px 0;
+  border-bottom: 1px solid #EEEEEE;
 }

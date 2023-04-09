@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    color: $table-headers;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__btns :not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+
+  &__btn {
+    float: left;
+    text-align: center;
+    width: 26px;
+    height: 24px;
+    background-color: #F5F5F5;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    color: #404B52;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+
+    &--current {
+      border: 1px solid #5932EA;
+      background: #5932EA;
+      color: #fff;
+    }
+
+    &--dots {
+      background-color: #fff;
+      border: none;
+      padding: 6px 0 0 0;
+      width: 9px;
+    }
+  }
+
+
+}
