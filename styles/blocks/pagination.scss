@@ -26,13 +26,13 @@
     cursor: pointer;
 
     &--current {
-      border: 1px solid #5932EA;
-      background: #5932EA;
-      color: #fff;
+      border: 1px solid $active-background;
+      background: $active-background;
+      color: $main-white;
     }
 
     &--dots {
-      background-color: #fff;
+      background-color: $main-white;
       border: none;
       padding: 6px 0 0 0;
       width: 9px;

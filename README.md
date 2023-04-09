@@ -1,4 +1,4 @@
-# price-tables
+# Dashboard
 ### [Site link](https://o-kozakovskyj.github.io/price-tables/)
 ### The tech stack is:
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)

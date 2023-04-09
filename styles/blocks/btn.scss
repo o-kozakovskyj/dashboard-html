@@ -7,7 +7,7 @@
   border-radius: 8px;
   border: none;
   padding: 13px;
-  background-color: #fff;
+  background-color: $main-white;
   cursor: pointer;
 
   &__context {
@@ -21,10 +21,10 @@
   }
 
   &--active {
-    background: #5932EA;
+    background: $active-background;
   }
 
   &--active span {
-    color: #fff;
+    color: $main-white;
   }
 }
