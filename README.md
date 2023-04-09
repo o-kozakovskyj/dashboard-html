@@ -1,5 +1,5 @@
 # Dashboard
-### [Site link](https://o-kozakovskyj.github.io/price-tables/)
+### [Site link](https://dashboard-customers.netlify.app/)
 ### The tech stack is:
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
