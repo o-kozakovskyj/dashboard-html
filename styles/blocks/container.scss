@@ -1,12 +1,13 @@
-.main {
-  background-color: #000;
-}
 *{
   box-sizing: border-box;
+}
+main {
+  background-color: #000;
 }
 .container {
   display: flex;
   max-width: 1440px;
   height: 1198px;
   margin: auto;
+  background-color: #FAFBFF;
 }
