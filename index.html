@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <aside class="side-menu">
+        <a class="logo" href="#">
+          <img src="images/logo.svg" alt="logo" class="logo__img" />
+          <div class="logo__info">
+            <span class="logo__text">Dashboard</span>
+            <span class="logo__version">v.01</span>
+          </div>
+        </a>
+        <nav class="side-menu__nav">
+          <button class="side-menu__nav-btn btn">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <img src="./images/key-square.svg" alt="icon with key" class="side-menu__nav-icon" />
+              </i>
+              <span class="btn__text">Dashboard</span>
+            </div>
+          </button>
+          <button class="side-menu__nav-btn btn">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <image src="./images/3d-square.svg" alt="cube icon" />
+              </i>
+              <span class="btn__text">Product</span>
+            </div>
+            <i class="btn__arrow">
+              <image src="./images/chevron-right.svg" alt="arrow-right" />
+            </i>
+          </button>
+          <button class="side-menu__nav-btn btn btn--active">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <img src="./images/user-square.svg" alt="user icon" class="side-menu__nav-icon" />
+              </i>
+              <span class="btn__text">Customers</span>
+            </div>
+            <i class="btn__arrow">
+              <image src="./images/arrow-right-white.svg" alt="arrow-right" />
+            </i>
+          </button>
+          <button class="side-menu__nav-btn btn">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <img src="./images/wallet-money.svg" alt="income icon" class="side-menu__nav-icon" />
+              </i>
+              <span class="btn__text">Income</span>
+            </div>
+            <i class="btn__arrow">
+              <image src="./images/chevron-right.svg" alt="arrow-right" />
+            </i>
+          </button>
+          <button class="side-menu__nav-btn btn">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <img src="./images/discount-shape.svg" alt="promote icon" class="side-menu__nav-icon" />
+              </i>
+              <span class="btn__text">Promote</span>
+            </div>
+            <i class="btn__arrow">
+              <image src="./images/chevron-right.svg" alt="arrow-right" />
+            </i>
+          </button>
+          <button class="side-menu__nav-btn btn">
+            <div class="btn__context">
+              <i class="btn__icon">
+                <img src="./images/message-question.svg" alt="help icon" class="side-menu__nav-icon" />
+              </i>
+              <span class="btn__text">Help</span>
+            </div>
+            <i class="btn__arrow">
+              <image src="./images/chevron-right.svg" alt="arrow-right" />
+            </i>
+          </button>
+        </nav>
+        <figure class="side-menu__user-info">
+          <img src="./images/avatar.svg" alt="user avatar" class="side-menu__user-avatar" />
+          <figcaption class="side-menu__user-name">
+           <span>Evano</span> 
+            <span class="side-menu__user-role">Project Manager</span>
+          </figcaption>
+          
+        </figure>
+      </aside>
+      <div class="operations">
+        <h1 class="operations__title">Hello Evano 👋</h1>
+        <section>
+          <div class="customers">
+            <div class="customers__header">
+              <div class="customers__header-text">
+                <h2 class="customers__title">
+                  All Customers
+                </h2>
+                <span class="customers__subtitle">Active Members</span>
+              </div>
+              <div class="customers__search">
+                <input type="text" class="customers__search-input" placeholder="Search" />
+                <img src="./images/search.svg" alt="search icon" class="customers__search-icon" />
+              </div>
+            </div>
+            <div class="customers__table">
+              <table class="customers__table-content">
+                <thead class="customers__table-head">
+                  <tr class="customers__table-row">
+                    <th class="customers__table-header">Customer Name</th>
+                    <th class="customers__table-header">Company</th>
+                    <th class="customers__table-header">Phone Number</th>
+                    <th class="customers__table-header">Email</th>
+                    <th class="customers__table-header">Country</th>
+                    <th class="customers__table-header">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="customers__table-body">
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Jane Cooper</td>
+                    <td class="customers__table-cell">Microsoft</td>
+                    <td class="customers__table-cell">(225) 555-0118</td>
+                    <td class="customers__table-cell">jane@microsoft.com</td>
+                    <td class="customers__table-cell">United States</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status customers__table-status--active">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Floyd Miles</td>
+                    <td class="customers__table-cell">Yahoo</td>
+                    <td class="customers__table-cell">(205) 555-0100</td>
+                    <td class="customers__table-cell">floyd@yahoo.com</td>
+                    <td class="customers__table-cell">Kiribati</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Ronald Richards</td>
+                    <td class="customers__table-cell">Adobe</td>
+                    <td class="customers__table-cell">(302) 555-0107</td>
+                    <td class="customers__table-cell">ronald@adobe.com</td>
+                    <td class="customers__table-cell">Israel</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Marvin McKinney</td>
+                    <td class="customers__table-cell">Tesla</td>
+                    <td class="customers__table-cell">(252) 555-0126</td>
+                    <td class="customers__table-cell">marvin@tesla.com</td>
+                    <td class="customers__table-cell">Iran</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status customers__table-status--active">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Jerome Bell</td>
+                    <td class="customers__table-cell">Google</td>
+                    <td class="customers__table-cell">(629) 555-0129</td>
+                    <td class="customers__table-cell">jerome@google.com</td>
+                    <td class="customers__table-cell">Réunion</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status customers__table-status--active">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Kathryn Murphy</td>
+                    <td class="customers__table-cell">Microsoft</td>
+                    <td class="customers__table-cell">(406) 555-0120</td>
+                    <td class="customers__table-cell">kathryn@microsoft.com</td>
+                    <td class="customers__table-cell">Curaçao</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status customers__table-status--active">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Jacob Jones</td>
+                    <td class="customers__table-cell">Yahoo</td>
+                    <td class="customers__table-cell">(208) 555-0112</td>
+                    <td class="customers__table-cell">jacob@yahoo.com</td>
+                    <td class="customers__table-cell">Brazil</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status customers__table-status--active">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="customers__table-row">
+                    <td class="customers__table-cell">Kristin Watson</td>
+                    <td class="customers__table-cell">Facebook</td>
+                    <td class="customers__table-cell">(704) 555-0127</td>
+                    <td class="customers__table-cell">kristin@facebook.com</td>
+                    <td class="customers__table-cell">Åland Islands</td>
+                    <td class="customers__table-cell">
+                      <span class="customers__table-status">Inactive</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="customers__pagination">
+                <div class="customers__pagination-text">Showing data 1 to 8 of 256K entries</div>
+                <div class="customers__pagination-btns">
+                  <button class="customers__pagination-btn">
+                    <img src="./images/prev-arrow.svg" alt="prev icon" />
+                  </button>
+                  <button class="customers__pagination-btn customers__pagination-btn--current">1</button>
+                  <button class="customers__pagination-btn">2</button>
+                  <button class="customers__pagination-btn">3</button>
+                  <button class="customers__pagination-btn">4</button>
+                  <span>...</span>
+                  <button class="customers__pagination-btn">40</button>
+                  <button class="customers__pagination-btn">
+                    <img src="./images/next-arrow.svg" alt="next icon" />
+                  </button>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
