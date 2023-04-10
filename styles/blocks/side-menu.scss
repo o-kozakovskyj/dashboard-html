@@ -1,10 +1,14 @@
 .side-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 1198px;
   width: 306px;
   padding: 36px 0 76px 28px;
   background-color: $main-white;
+
+  @include onDescktop {
+    display: flex;
+  }
 
   &__nav {
     margin-top: 65px;

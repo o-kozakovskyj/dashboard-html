@@ -1,15 +1,27 @@
 .customers {
-  padding: 30px 40px 38px 41px;
+  padding: 30px 20px 38px 20px;
+
+  @include onDescktop {
+    padding: 30px 40px 38px 41px;
+  }
+
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
   border-radius: 30px;
   background-color: $main-white;
   color: #292D32;
 
   &__header {
+    flex-direction: column;
+    margin: 13px 0 0 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 13px;
+
+
+    @include onDescktop {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 13px;
+    }
   }
 
   &__title {
@@ -38,6 +50,7 @@
     border-radius: 10px;
     padding: 10px 10px 10px 40px;
     border: none;
+    width: 100%;
 
     &::placeholder {
       color: $table-headers;
@@ -65,30 +78,33 @@
 
   &__table-head {
     color: $table-headers;
-    border-bottom: 1px solid #EEEEEE;
-    padding: 0 -38px;
+    border-bottom: 1px solid #EEE;
     position: relative;
 
     &:before {
-      position: absolute;
-      display: block;
-      width: 40px;
-      height: 1px;
-      content: "";
-      border-bottom: 1px solid #EEEEEE;
-      top: 34px;
-      left: -40px;
+      @include onDescktop {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 1px;
+        content: "";
+        border-bottom: 1px solid #eee;
+        top: 34px;
+        left: -40px;
+      }
     }
 
     &:after {
-      position: absolute;
-      display: block;
-      width: 40px;
-      height: 1px;
-      content: "";
-      border-bottom: 1px solid #EEEEEE;
-      top: 34px;
-      right: -40px;
+      @include onDescktop {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 1px;
+        content: "";
+        border-bottom: 1px solid #eee;
+        top: 34px;
+        right: -40px;
+      }
     }
   }
 
@@ -111,13 +127,16 @@
     border: 1px solid #DF0404;
     color: #DF0404;
     border-radius: 4px;
-    width: 80px;
+    font-size: 10px;
+    @include onDescktop {
+      max-width: 80px;
+      font-size: 14px;
+    }
 
     &--active {
       background: rgba(22, 192, 152, 0.38);
       border: 1px solid #00B087;
       color: #008767;
-
     }
   }
 }
@@ -125,9 +144,23 @@
 th {
   text-align: left;
   padding: 0 0 14px 0;
+  font-size: 10px;
+  @include onDescktop {
+    font-size: 14px;
+  }
 }
 
 td {
   padding: 24px 0;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eee;
+  max-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+font-size: 10px;
+  @include onDescktop {
+    max-width: 100px;
+    font-size: 14px;
+  }
+
 }

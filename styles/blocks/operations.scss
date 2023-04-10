@@ -1,15 +1,24 @@
 .operations {
-  padding: 41px 71px;
-
+  @include onDescktop {
+    padding: 41px 71px;
+  }
   &__title {
-    margin: 0;
-    font-size: 24px;
-    line-height: 36px;
+    display: none;
+    @include onDescktop {
+      display: block;
+      margin: 0;
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 
   &__customers {
-    width: 968px;
-    margin-top: 51px;
     background-color: $main-white;
+    @include onDescktop {
+      width: 968px;
+      margin-top: 51px;
+    }
+
+
   }
 }
